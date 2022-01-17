@@ -1,3 +1,5 @@
+<h1 class="main">Welcome to Wikinimous!</h1>
+
 <ul>
   <% @articles.each do |article| %>
     <li><h2><%= link_to article.title, article %></h2></li>
@@ -5,4 +7,6 @@
   <% end %>
 </ul>
 
+<div class="new-article">
 <%= link_to 'New article', new_article_path %>
+</div>

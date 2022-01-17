@@ -1,6 +1,7 @@
 <h1><%= @article.title %></h1>
 <p><%= @article.content %></p>
 
+<div class="links">
 <%= link_to 'Edit', edit_article_path %>
 <%= link_to "Delete",
             article_path(@article),
@@ -8,3 +9,4 @@
             data: { confirm: "Are you sure?" } %>
 
 <%= link_to 'Back', articles_path %>
+</div>
